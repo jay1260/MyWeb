@@ -6,18 +6,90 @@
 <link href="./css/common/reset.css" rel="stylesheet">
 <style type="text/css">
 	/* Header */
+	
 	#header_top{
-		width: 100%;
+		width:100%;
 		height: 50px;
 		background-color: black;
-		padding: 12px 35px 13px 35px;
+		
 		box-sizing: border-box;
 	}
+
 	#header_top_2{
 		width: 100%;
-		height:86.6px;
-		background-color: red;
+		height:89.6px;
+		background-color: #363d55;
 	}
+	.header_top_menu{
+		float: left;
+	}
+	#header_top_main{
+		width: 148px;
+		height: 27px;
+		padding: 11px 35px 12px 35px;
+		opacity: 0.7;
+	}
+	#header_top_main > img{
+		width: 148px;
+		height: 27px;
+	}
+	#header_top_nav{
+		width:112.525px;
+		height:50px;
+		margin-left:24px;
+		padding: 12px 36px 13px 30px;
+		box-sizing: border-box;
+		font-weight: bold;
+		color: #777786;
+	}
+
+	#header_top_sub{
+		width:105.425px;
+		height: 50px;
+		padding: 12px 36px 13px 30px;
+		box-sizing: border-box;
+		font-weight: bold;
+		color: #777786;
+	}
+	#header_top_store{
+		width: 280px;
+		height: 50px;
+		padding:7px 26px 7px 0;
+		float: right;
+	}
+	.header_top_menu_2{
+		float: left;
+	}
+	#header_top_main_2{
+		width: 306px;
+		height: 89.6px;
+		padding-left: 30px;
+		box-sizing: border-box;
+	}
+	#header_top_main_2 > img{
+		padding: 9.6px 0 9.6px 0;
+	}
+	#header_top_nav_2{
+		width: 583.025px;
+		height: 89.6px;
+		margin-left:30%;
+	}
+	#header_top_nav_2 li{
+		float:left;
+		padding : 0 24px;
+		color:#b5b5b5;
+		height:89.6px;
+		line-height:89.6px;
+		list-style: none;
+		font-size: 18px;
+	}
+	#header_top_sub_2{
+		width: 1200px;
+		height: 60px;
+		background-color: purple;
+		margin: 50px auto;
+	}
+	
 	/* Section */
 	#section_main{
 		width: 1200px;
@@ -25,11 +97,14 @@
 		background-color: blue;
 		margin: 0 auto;
 	}
+	
 	/* Footer */
 	#footer_main{
 		width:100%;
 		height:248px;
 		background-color: green;
+		padding: 35px 0 40px 0;
+		margin-top: 50px;
 	}
 </style>
 </head>
@@ -38,8 +113,35 @@
 	
 	<!-- Header -->
 	<header>
-		<div id="header_top"></div>
-		<div id ="header_top_2"></div>
+		<div id="header_top">
+			<div id="header_top_main" class="header_top_menu">
+				<img alt="" src="./images/common/spr_logos2_v2.jpg">
+			</div>
+			<div id="header_top_nav" class="header_top_menu">
+			GAME
+			</div>
+			<div id="header_top_sub" class="header_top_menu">
+			NEWS
+			</div>
+			<div id="header_top_store" >
+				<img alt="" src="./images/common/img_banner_200227.png">
+			</div>
+		</div>
+		<div id ="header_top_2">
+			<div id="header_top_main_2" class="header_top_menu_2">
+				<img alt="" src="./images/common/logo_blackdesert.png">
+			</div>
+			<nav id="header_top_nav_2" class="header_top_menu_2">
+				<ul>
+					<li>핫 이슈</li>
+					<li>오버뷰</li>
+					<li>모험가 가이드</li>
+					<li>포럼</li>
+					<li>쿠폰사용</li>
+				</ul>
+			</nav>
+		</div>
+		<div id="header_top_sub_2"></div>
 	
 	</header>
 	<!-- Section -->
