@@ -83,11 +83,16 @@
 		list-style: none;
 		font-size: 18px;
 	}
+	#header_sub_menu{
+		float: left;
+	}
 	#header_top_sub_2{
 		width: 1200px;
 		height: 60px;
-		background-color: purple;
+		background-color: gray;
 		margin: 50px auto;
+		padding: 0 10px 0 25px;
+		box-sizing: border-box;
 	}
 	
 	/* Section */
@@ -102,9 +107,46 @@
 	#footer_main{
 		width:100%;
 		height:248px;
-		background-color: green;
 		padding: 35px 0 40px 0;
+		background-color:#212121;
 		margin-top: 50px;
+	}
+	#footer_sns{
+		width: 100%;
+		height: 62px;
+		text-align: center;
+	}
+	#footer_sns div{
+		display:inline-block;
+		width:62px;
+		height:62px;
+		background-color: red;
+		margin: 0 6px;
+	}
+	#footer_site{
+		width: 100%;
+		height: 71px;
+		margin-top:25px;
+		text-align: center;
+	}
+	#footer_site img{
+		border: 1px solid white;
+	}
+	#footer_service{
+		width: 50%;
+		height: 70.8px;
+		margin: 0 auto;
+		padding:25px 0;
+		box-sizing:border-box;
+		color: #989898;
+		
+	}
+	#footer_service li{
+		float:left;
+		width:16%;
+		list-style: none;
+		height: 20.8px;
+		text-align:center;
 	}
 </style>
 </head>
@@ -141,9 +183,10 @@
 				</ul>
 			</nav>
 		</div>
-		<div id="header_top_sub_2"></div>
-	
+		<div id="header_top_sub_2">
+		</div>
 	</header>
+	
 	<!-- Section -->
 	<section>
 		<div id="section_main"></div>
@@ -151,7 +194,30 @@
 	
 	<!-- Footer -->
 	<footer>
-		<div id="footer_main"></div>
+		<div id="footer_main">
+			<div id="footer_sns">
+				<div>F</div>
+				<div>Y</div>
+				<div>I</div>
+			</div>
+			<div id="footer_site">
+				<img alt="" src="./images/common/img_footer_appstore.jpg">
+				<img alt="" src="./images/common/img_footer_playstore.jpg">
+				<img alt="" src="./images/common/img_footer_galaxystore.jpg">
+				<img alt="" src="./images/common/img_footer_onestore.jpg">
+			</div>
+			<div id="footer_service">
+				<ul>
+					<li>서비스 이용 약관</li>
+					<li>검은사막 모바일 운영정책</li>
+					<li>포럼 운영정책</li>
+					<li>이벤트 정책</li>
+					<li>개인정보처리방침</li>
+					<li>고객센터</li>
+					
+				</ul>
+			</div>
+		</div>
 	</footer>
 </body>
 </html>
