@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	.write{
+		width: 600px;
+		margin: 0 auto;
+		margin-top: 50px;
+	}
+	.button{
+		text-align: right;
+	}
+	.writer{
+		margin-top: 5px;
+	}
+	.content{
+		margin-top:15px;
+	}
+	.h1{
+		width:600px;
+		margin: 0 auto;
+	}
+</style>
+</head>
+<body>
+	<h1 class = "h1">Board Write Page</h1>
+	<!-- 폼 태그 사용 -->
+	<form action ="./boardWrite.html">
+		<div class = "write">
+			<!-- 제목, 작성자, 내용 -->
+			<div class="title">Title</div>
+			<input type="text" placeholder="제목">
+			
+			<div class="writer">Writer</div>
+			<input type="text" placeholder="작성자">
+			
+			<div class = "content">Contents</div>
+			<textarea rows="15" cols="80" placeholder="내용"></textarea>
+			<!-- write 버튼 -->
+			<br>
+			<div class ="button">
+			<input type="submit" value="write">
+			</div>
+		</div>
+	</form>
+</body>
+</html>
