@@ -102,6 +102,62 @@
 		background-color: blue;
 		margin: 0 auto;
 	}
+	#section_top{
+		width: 1200px;
+		height: 306px;
+		background-color: gray;
+	}
+	.section_menu{
+		float: left;
+	}
+	#section_1_1{
+		width: 587px;
+		height: 306px;
+		background-color: red;
+	}
+	#section_1_1 img{
+		width: 587px;
+		height: 306px;
+	}
+	#section_1_2{
+		width: 586.8px;
+		height: 302.8px;
+		margin-left:20px;
+		border:black 1.6px solid;
+		background-color: yellow;
+	}
+	#section_main_1{
+		display:block;
+		width: 586.8px;
+		height: 60px;
+		padding: 18px 25px 18px 25px;
+		box-sizing: border-box;
+		color: #fff;
+		font-size: 18px;
+		background-color: #353d55;
+		text-align: left;
+	}
+	#section_1_2 li{
+		width: 436.275px;
+		height: 20.8px;
+		list-style: none;
+	}
+	.list_sub_1{
+		padding-top: 22px;
+		box-sizing: border-box;
+	}
+	.list_sub_2{
+		padding-top: 22px;
+		box-sizing: border-box;
+	}
+	.list_sub_3{
+		padding-top: 22px;
+		box-sizing: border-box;
+	}
+	.list_sub_4{
+		padding-top: 22px;
+		box-sizing: border-box;
+	}
 	
 	/* Footer */
 	#footer_main{
@@ -116,11 +172,10 @@
 		height: 62px;
 		text-align: center;
 	}
-	#footer_sns div{
+	#footer_sns img{
 		display:inline-block;
 		width:62px;
 		height:62px;
-		background-color: red;
 		margin: 0 6px;
 	}
 	#footer_site{
@@ -189,16 +244,25 @@
 	
 	<!-- Section -->
 	<section>
-		<div id="section_main"></div>
+		<div id="section_main">
+			<section id="section_top">
+				<article id="section_1_1" class="section_menu">
+					<img alt="" src="./images/common/desert_image.jpg">
+				</article>
+				<section id="section_1_2" class="section_menu">
+					<div id="section_main_1">주요소식</div>
+				</section>
+			</section>
+		</div>
 	</section>
 	
 	<!-- Footer -->
 	<footer>
 		<div id="footer_main">
 			<div id="footer_sns">
-				<div>F</div>
-				<div>Y</div>
-				<div>I</div>
+				<img alt="" src="./images/common/facebook_logo.PNG">
+				<img alt="" src="./images/common/youtube_logo.PNG">
+				<img alt="" src="./images/common/instar_logo.PNG">
 			</div>
 			<div id="footer_site">
 				<img alt="" src="./images/common/img_footer_appstore.jpg">
