@@ -66,7 +66,7 @@
 		padding-left: 30px;
 		box-sizing: border-box;
 	}
-	#header_top_main_2 > img{
+	#header_top_main_2 img{
 		padding: 9.6px 0 9.6px 0;
 	}
 	#header_top_nav_2{
@@ -83,16 +83,58 @@
 		list-style: none;
 		font-size: 18px;
 	}
+	#header_top_nav_2 a{
+		color:#b5b5b5;
+		text-decoration: none;
+	}
 	#header_sub_menu{
 		float: left;
 	}
 	#header_top_sub_2{
 		width: 1200px;
 		height: 60px;
-		background-color: gray;
+		background-color: #363d55;
 		margin: 50px auto;
 		padding: 0 10px 0 25px;
 		box-sizing: border-box;
+	}
+	#sub_2_top_menu{
+		display: inline-block;
+	}
+	#header_top_title{
+		float:left;
+		width: 104.5px;
+		height: 24px;
+		color: #fff;
+		padding-left:20px;
+		box-sizing:border-box;
+		margin: 18px 0;
+		font-weight: bold;
+	}
+	#header_top_search{
+		float: right;
+		width: 283.025px;
+		height: 40px;
+		background-color: green;
+	}
+	#header_login{
+		float:left;
+		width: 66.225px;
+		height: 24px;
+		margin: 8px 10px 8px 0;
+		color: #fff;
+	}
+	#header_search{
+		float:left;
+		width: 203.6px;
+		height: 36.8px;
+		background-color: red;
+	}
+	#login_logo{
+		width: 18px;
+		height: 18px;
+		background-image: url("./images/main/loginlogo.png");
+		float: left;
 	}
 	
 	/* Section */
@@ -212,7 +254,7 @@
 	<header>
 		<div id="header_top">
 			<div id="header_top_main" class="header_top_menu">
-				<img alt="" src="./images/common/spr_logos2_v2.jpg">
+				<img alt="" src="/MyWeb/images/common/spr_logos2_v2.jpg">
 			</div>
 			<div id="header_top_nav" class="header_top_menu">
 			GAME
@@ -221,16 +263,16 @@
 			NEWS
 			</div>
 			<div id="header_top_store" >
-				<img alt="" src="./images/common/img_banner_200227.png">
+				<img alt="" src="/MyWeb/images/common/img_banner_200227.png">
 			</div>
 		</div>
 		<div id ="header_top_2">
 			<div id="header_top_main_2" class="header_top_menu_2">
-				<img alt="" src="./images/common/logo_blackdesert.png">
+				<a href="/MyWeb/index.html"><img alt="" src="/MyWeb/images/common/logo_blackdesert.png"></a>
 			</div>
 			<nav id="header_top_nav_2" class="header_top_menu_2">
 				<ul>
-					<li>핫 이슈</li>
+					<li><a href="/MyWeb/board/boardList.html">BOARD</a></li>
 					<li>오버뷰</li>
 					<li>모험가 가이드</li>
 					<li>포럼</li>
@@ -239,6 +281,13 @@
 			</nav>
 		</div>
 		<div id="header_top_sub_2">
+			<div id="header_top_title" class="sub_2_top_menu">모험가포럼</div>
+			<div id="header_top_search" class="sub_2_top_menu">
+				<div id="header_login" class="sub_2_top_menu">Login
+					<div id="login_logo"></div>
+				</div>
+				<div id="header_search" class="sub_2_top_menu"></div>
+			</div>
 		</div>
 	</header>
 	
@@ -260,15 +309,15 @@
 	<footer>
 		<div id="footer_main">
 			<div id="footer_sns">
-				<img alt="" src="./images/common/facebook_logo.PNG">
-				<img alt="" src="./images/common/youtube_logo.PNG">
-				<img alt="" src="./images/common/instar_logo.PNG">
+				<img alt="" src="/MyWeb/images/common/facebook_logo.PNG">
+				<img alt="" src="/MyWeb/images/common/youtube_logo.PNG">
+				<img alt="" src="/MyWeb/images/common/instar_logo.PNG">
 			</div>
 			<div id="footer_site">
-				<img alt="" src="./images/common/img_footer_appstore.jpg">
-				<img alt="" src="./images/common/img_footer_playstore.jpg">
-				<img alt="" src="./images/common/img_footer_galaxystore.jpg">
-				<img alt="" src="./images/common/img_footer_onestore.jpg">
+				<img alt="" src="/MyWeb/images/common/img_footer_appstore.jpg">
+				<img alt="" src="/MyWeb/images/common/img_footer_playstore.jpg">
+				<img alt="" src="/MyWeb/images/common/img_footer_galaxystore.jpg">
+				<img alt="" src="/MyWeb/images/common/img_footer_onestore.jpg">
 			</div>
 			<div id="footer_service">
 				<ul>
