@@ -3,6 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<link href="../css/common/reset.css" rel="stylesheet">
+<link href="../css/common/default.css" rel="stylesheet">
 <style type="text/css">
 	.write{
 		width: 600px;
@@ -22,9 +24,57 @@
 		width:600px;
 		margin: 0 auto;
 	}
+	#board_content{
+		width: 1200px;
+		min-height: 890px;
+		margin: 0 auto;
+	}
 </style>
 </head>
 <body>
+	<!-- Header -->
+	<header>
+		<div id="header_top">
+			<div id="header_top_main" class="header_top_menu">
+				<img alt="" src="/MyWeb/images/common/spr_logos2_v2.jpg">
+			</div>
+			<div id="header_top_nav" class="header_top_menu">
+			GAME
+			</div>
+			<div id="header_top_sub" class="header_top_menu">
+			NEWS
+			</div>
+			<div id="header_top_store" >
+				<img alt="" src="/MyWeb/images/common/img_banner_200227.png">
+			</div>
+		</div>
+		<div id ="header_top_2">
+			<div id="header_top_main_2" class="header_top_menu_2">
+				<a href="/MyWeb/index.html"><img alt="" src="/MyWeb/images/common/logo_blackdesert.png"></a>
+			</div>
+			<nav id="header_top_nav_2" class="header_top_menu_2">
+				<ul>
+					<li><a href="/MyWeb/board/boardList.html">BOARD</a></li>
+					<li>오버뷰</li>
+					<li>모험가 가이드</li>
+					<li>포럼</li>
+					<li>쿠폰사용</li>
+				</ul>
+			</nav>
+		</div>
+		<div id="header_top_sub_2">
+			<div id="header_top_title" class="sub_2_top_menu">모험가포럼</div>
+			<div id="header_top_search" class="sub_2_top_menu">
+				<div id="header_login" class="sub_2_top_menu">Login
+					<div id="login_logo"></div>
+				</div>
+				<div id="header_search" class="sub_2_top_menu">
+					<input id="header_search_menu" type="text" placeholder="통합검색" style="width: 203.6px;">
+				</div>
+			</div>
+		</div>
+	</header>
+	<section id="board_content">
 	<h1 class = "h1">Board Write Page</h1>
 	<!-- 폼 태그 사용 -->
 	<form action ="./boardWrite.html">
@@ -45,5 +95,32 @@
 			</div>
 		</div>
 	</form>
+	</section>
+	<!-- Footer -->
+	<footer>
+		<div id="footer_main">
+			<div id="footer_sns">
+				<img alt="" src="/MyWeb/images/common/facebook_logo.PNG">
+				<img alt="" src="/MyWeb/images/common/youtube_logo.PNG">
+				<img alt="" src="/MyWeb/images/common/instar_logo.PNG">
+			</div>
+			<div id="footer_site">
+				<img alt="" src="/MyWeb/images/common/img_footer_appstore.jpg">
+				<img alt="" src="/MyWeb/images/common/img_footer_playstore.jpg">
+				<img alt="" src="/MyWeb/images/common/img_footer_galaxystore.jpg">
+				<img alt="" src="/MyWeb/images/common/img_footer_onestore.jpg">
+			</div>
+			<div id="footer_service">
+				<ul>
+					<li>서비스 이용 약관</li>
+					<li>검은사막 모바일 운영정책</li>
+					<li>포럼 운영정책</li>
+					<li>이벤트 정책</li>
+					<li>개인정보처리방침</li>
+					<li>고객센터</li>
+				</ul>
+			</div>
+		</div>
+	</footer>
 </body>
 </html>
