@@ -68,7 +68,8 @@
 		width: 582.025px;
 		height: 89.6px;
 		display: inline-block;
-		margin-left: 25%;
+		position:absolute;
+		right: 40%
 	}
 	#header_top_nav_2 li{
 		float:left;
