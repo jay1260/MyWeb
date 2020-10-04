@@ -3,8 +3,7 @@
 	/* Section */
 	#section_main{
 		width: 1200px;
-		height: 1702px;
-		background-color: blue;
+		height: 1493.2px;
 		margin: 0 auto;
 	}
 	#section_top{
@@ -27,7 +26,7 @@
 		height: 302.8px;
 		margin-left:20px;
 		border:black 1.6px solid;
-		background-color: yellow;
+		background-color: white;
 	}
 	#section_main_1{
 		display:block;
@@ -45,3 +44,230 @@
 		height: 20.8px;
 		list-style: none;
 	}
+	#section_1_3{
+		width: 586.8px;
+		height: 242px;
+		padding: 25px;
+		box-sizing: border-box;
+	}
+	#section_1_3 li{
+		width: 536.8px;
+		height: 20.8px;
+		color: #2b2b2b;
+	}
+	.section_c1{
+		padding: 22px 0;
+		box-sizing: border-box;
+	}
+	#section_content{
+		float:left;
+		width: 1200px;
+		height: 90px;
+		margin-top: 50px;
+	}
+	#text_1{
+		float:left;
+		width:385px;
+		height: 90px;
+		padding: 0 20px;
+		box-sizing:border-box;
+		background-color: white;
+		border: 1px solid gray;
+	}
+	#text_2{
+		float:left;
+		width:385px;
+		height: 90px;
+		padding: 0 20px;
+		margin:0 22.5px;
+		box-sizing:border-box;
+		background-color: white;
+		border: 1px solid gray;
+	}
+	#text_3{
+		float:left;
+		width:385px;
+		height: 90px;
+		padding: 0 20px;
+		box-sizing:border-box;
+		background-color: white;
+		border: 1px solid gray;
+	}
+	.text_text{
+		width: 341.8px;
+		height: 53.2px;
+	}
+	.text_text .title{
+		display:block;
+		width: 100%;
+		height:30.4px;
+		color:#151515;
+		margin:20px 0 0 22px;
+		padding-right: 28px;
+		box-sizing: border-box;
+		font-size: 15px;
+	}
+	.text_text .content{
+		width: 100%;
+		height:20.8px;
+		display:block;
+		font-size: 15px;
+		color: #999;
+	}
+	.section_img{
+		float:left;
+		width: 1200px;
+		height: 90px;
+		margin-top: 15px;
+	}
+	#img_1{
+		float:left;
+		width:385px;
+		height: 90px;
+	}
+	#img_2{
+		float:left;
+		width:385px;
+		height: 90px;
+		margin: 0 22.5px;
+	}
+	#img_3{
+		float:left;
+		width:385px;
+		height: 90px;
+	}
+	#section_board{
+		float:left;
+		width: 1200px;
+		height: 656.6px;
+		margin-top:50px;
+		
+		padding-bottom: 20px;
+	}
+	.sc_board_title{
+		width: 1200px;
+		height: 60px;
+		background-color: #434d6a;
+		line-height:60px;
+		padding: 0 30px;
+		box-sizing: border-box;
+	}
+	.sc_title_text{
+		width:57px;
+		height:24px;
+		font-size: 18px;
+		color:#fff;
+		
+	}
+	#sc_board_list{
+		width: 1200px;
+		height: 50px;
+		list-style: none;
+		font-size: 15px;
+		line-height: 50px;
+	}
+	.li_1{
+		width: 1200px;
+		height: 50px;
+		padding: 4px 0;
+		border-bottom: 1px solid #dfdfdf;
+	}
+
+	.board_title_set{
+		float:left;
+		width: 696px;
+		height: 50px;
+		color: #000;
+	}
+	.sc_boardlist_title{
+		width: 652px;
+		height: 50px;
+		padding: 0 14px 0 30px;
+		
+	}
+	.board_writer_set{
+		float: left;
+		width: 147.9px;
+		height: 50px;
+		text-align: center;
+		color: #364475;
+	}
+	.sc_boardlist_writer{
+		width: 147.9px;
+		height: 50px;
+		padding: 0 14px;
+	}
+	.board_date_set{
+		float:left;
+		width: 147.9px;
+		height: 50px;
+		padding: 0 14px;
+		text-align: center;
+		color: #777777;
+	}
+	.board_count_set{
+		float:left;
+		width: 47.950px;
+		height: 50px;
+		padding: 0 14px;
+		text-align: center;
+		color: #777777;
+	}
+	.sc_boardlist_count{
+		width: 36.325px;
+		height: 49.6px;
+	}
+	.board_commend_set{
+		float:left;
+		width: 47.950px;
+		height: 50px;
+		padding: 0 14px;
+		text-align: center;
+		color: #777777;
+	}
+	.sc_boardlist_commend{
+		width: 6.675px;
+		height: 49.6px;
+	}
+	#section_bottom{
+		float:left;
+		width: 1200px;
+		height: 216.2px;
+	}
+	#section_bottom strong{
+		display: block;
+		font-size: 2.0rem;
+		text-align:center;
+		color:#353d55;
+		font-weight: normal;
+	}
+	.bottom_community{
+		width: 1196.8px;
+		height: 154.5px;
+		background-color: #fff;
+		margin: 25px 0 70px;
+	}
+	.bottom_community li{
+		list-style: none;
+		border: 1px solid #dfdfdf;
+	}
+	.bottom_li_1{
+		float:left;
+		width: 395.675px;
+		height: 90.4px;
+		padding: 32px 0;
+	}
+	.bottom_li_1 img{
+		display:block;
+		width: 65px;
+		height: 65px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.bottom_li_1 em{
+		display: block;
+		width: 398.875px;
+		height: 22.4px;
+		text-align: center;
+	}
+
