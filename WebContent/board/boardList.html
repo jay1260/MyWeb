@@ -3,6 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <link href="../css/common/reset.css" rel="stylesheet">
 <link href="../css/common/default.css" rel="stylesheet">
 <style type="text/css">
@@ -17,7 +20,7 @@
 		width:100%; 
 		text-align: center;
 		}
-	.tbl{
+	#tbl{
 		width:70%;
 		margin: 0 auto;
 		border-spacing: 0px;
@@ -38,6 +41,9 @@
 		color: black;
 		text-decoration: none;
 	}
+	.td_write{
+		font-size: 2.2rem;
+	}
 	
 </style>
 </head>
@@ -48,12 +54,8 @@
 			<div id="header_top_main" class="header_top_menu">
 				<img alt="" src="/MyWeb/images/common/spr_logos2_v2.jpg">
 			</div>
-			<div id="header_top_nav" class="header_top_menu">
-			GAME
-			</div>
-			<div id="header_top_sub" class="header_top_menu">
-			NEWS
-			</div>
+			<div id="header_top_nav" class="header_top_menu">GAME</div>
+			<div id="header_top_sub" class="header_top_menu">NEWS</div>
 			<div id="header_top_store" >
 				<img alt="" src="/MyWeb/images/common/img_banner_200227.png">
 			</div>
@@ -88,7 +90,7 @@
 	<h1 class="h1">Board List Page</h1>
 	<!-- 게시판 리스트 -->
 	<!-- 제목을 클릭하면 boardSelect로 이동 -->
-	<table class = "tbl">
+	<table id="tbl" class="table-striped">
 		<tr class ="c1">
 			<td>번호</td><td>제목</td><td>작성자</td>
 		</tr>
@@ -126,7 +128,7 @@
 		<!-- 글쓰기 버튼 클릭 -> boardWrite로 이동 -->
 		<tr>
 		
-		<td><a href="./boardWrite.html">글쓰기</a></td>
+		<td class="td_write"><a href="./boardWrite.html">글쓰기</a></td>
 		
 		</tr>
 	</table>

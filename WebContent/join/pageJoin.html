@@ -5,18 +5,17 @@
 <title>Insert title here</title>
 <link href="../css/common/reset.css" rel="stylesheet">
 <link href="../css/common/default.css" rel="stylesheet">
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
+<style type="text/css">
+	#agree{
+		width: 200px;
+		height: 500px;
+		margin: 30px auto;
+		font-size: 25px;
+	}
+</style>
 </head>
 <body>
-	<!-- Header -->
+		<!-- Header -->
 	<header>
 		<div id="header_top">
 			<div id="header_top_main" class="header_top_menu">
@@ -58,32 +57,60 @@
 			</div>
 		</div>
 	</header>
-	<section id="board_content">
-	<!-- 폼 태그 사용 -->
-	<form action ="./boardWrite.html">
-	<div class="container">
-	  <h2>Board Write Page</h2>
-	    
-	    <div class="form-group">
-	      <label for="title">Title:</label>
-	      <input type="text" class="form-control" id="title" placeholder="Enter Title" name="title">
-	    </div>
-	    
-	     <div class="form-group">
-	      <label for="writer">Writer:</label>
-	      <input type="text" class="form-control" id="writer" placeholder="Enter Writer" name="writer">
-	    </div>
-	    
-	     <div class="form-group">
-	      <label for="contents">Contents:</label>
-	      <textarea class="form-control" rows="10" id="contents" name="contents"></textarea>
-	    </div>
-	    
-	    <button type="submit" class="btn btn-default">Write</button>
+	
+	<div id="agree">
+		<p><input type="checkbox" id="call">전체 동의</p>
+		<p><input type="checkbox" class="cbox">필수 1</p>
+		<p><input type="checkbox" class="cbox">필수 2</p>
+		<p><input type="checkbox" class="cbox">필수 3</p>
+		<p><input type="checkbox" class="cbox">필수 4</p>
+		<p><input type="button" value="Join" id="btn"></p>
 	</div>
-	</form>
-	</section>
-	<!-- Footer -->
+
+	<script type="text/javascript">
+		var btn = document.getElementById("btn");
+		var call = document.getElementById("call");
+		var cbox = document.getElementsByClassName("cbox");
+		
+		// 전체 동의 전체 체크선택, 체크해재
+		call.addEventListener('click', function() { //전체 동의에 클릭이벤트
+				for(var i=0; i<cbox.length; i++){ // 체크항목의 배열수만큼 반복
+					cbox[i].checked = call.checked;
+					// 체크항목 값은 전체 동의 항목에 값과 같다
+					// 전체 동의 true이면 체크항목도 true , false면 같이 false
+				}
+		});
+		
+		// 체크박스 해제시 전체동의 해제	
+		for(var i=0; i<cbox.length;i++){
+			cbox[i].addEventListener('click', function() {
+		// 체크항목에 클릭 이벤트 주기
+				//---------------------------------
+				var result = true;
+				
+				for(var j=0;j<cbox.length;j++){ // 체크항목 수만큼 반복
+					if(!cbox[j].checked){
+						result = false;
+					}
+				}
+				call.checked = result;
+				
+				//------------------------------------
+			});
+		}
+			
+		btn.addEventListener('click', function() {
+			var ch = document.getElementById("call").checked;
+			// 변수명 ch에 전체동의 checked 속성을 담는다.
+			if(ch){ // true면 success
+				window.location.href="/JS_1/js_8_event/event_ex_4.html";
+			}else{
+				alert("Fail");
+			}
+		});
+		</script>
+		
+		<!-- Footer -->
 	<footer>
 		<div id="footer_main">
 			<div id="footer_sns">
@@ -105,6 +132,7 @@
 					<li>이벤트 정책</li>
 					<li>개인정보처리방침</li>
 					<li>고객센터</li>
+					
 				</ul>
 			</div>
 		</div>
